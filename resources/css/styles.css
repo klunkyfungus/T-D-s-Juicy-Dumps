@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    font-family: "permanent marker";
+}
+
+body {
+    width: 100%;
+}
+
+html, body {
+    overflow: visible;
+}
+
+header {
+    display: flex;
+    background: rgba(255, 43, 85,.9);
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    border-bottom: 0.0625rem solid gold;
+    
+}
+
+header::before {
+    content: "";
+    position:fixed;
+    top: -0.625rem;
+    left: 0;
+    height: 0.625rem;
+    width: 100%;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+#logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 0 1rem;
+    transition: all .25s ease-out;  
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+    min-width: 3.5rem;
+    
+}
+
+#logo:hover {
+    filter: drop-shadow(0 -.5rem 1rem white);
+    cursor: pointer; 
+}
+
+header h1 {
+    color: gold;
+    opacity: .8;
+    text-shadow: 0.0625rem 0.0625rem .25rem rgb(255, 43, 85), -0.0625rem -0.0625rem .25rem blueviolet;
+    min-width: 18.5rem;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
+.locations {
+    text-decoration: none;
+    color: gold;
+}
+
+.locations, .social img {
+    transition: all .25s ease-out;  
+}
+
+.locations:hover {
+    text-shadow: .125rem .125rem .25rem blueviolet;
+}
+
+.social img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: .5rem;
+}
+
+.instagram img {
+    background: aliceblue;
+    border-radius: .25rem;
+}
+
+.social img:hover {
+    box-shadow: 0 0 .5rem aliceblue;
+}
+
+.banner {
+    display: flex;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 39rem;
+    opacity: .93;
+    text-align: center;
+    color: gold;
+    justify-content: flex-start;
+    align-items: center;
+    text-shadow: 0.0625rem 0.0625rem .25rem rgb(255, 43, 85), -0.0625rem -0.0625rem .25rem blueviolet;
+    border-bottom: 0.0625rem solid gold;
+}
+
+.banner h1 {
+    width: 25%;
+    position: relative;
+    left: 7rem;
+    bottom: 3rem;
+    min-width: 16.125rem;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    color: gold;
+}
+
+.offerings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
+}
+.offerings h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.image-container {
+    width: 20rem;
+    max-height: 20rem;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.image-container-slider {
+    height: 20rem;
+    max-width: 20rem;
+}
+
+.image-container-slider img {
+    max-height: 100%;
+    transition: all .25s ease-out;  
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 20rem;
+    display: block;   
+    transition: all .25s ease-out;
+}
+
+.offering-container {
+    display: flex;
+    text-align: center; 
+    max-width: 33.33%;
+    justify-content: center;
+    min-width: 20rem;    
+}
+
+.offering-container-slider {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 21.5625rem; 
+    padding-bottom: 2rem;
+}
+
+.offering-container img:hover, .offering-container-slider img:hover {
+    cursor: pointer;
+    box-shadow: .5rem .5rem .5rem blueviolet;
+    position: relative;
+    bottom: .25rem;
+    right: .25rem;
+}
+
+.offerings, .offerings-section-2{
+    background: rgba(255, 43, 85, .9);
+}
+
+.offerings-section-2 {
+    border-bottom: 0.0625rem solid gold;
+}
+
+.owners {
+    background: rgba(31, 30, 30,.9);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 1rem;
+    color: aliceblue;
+}
+
+.owners h2 {
+    text-align: center;
+}
+
+.owner-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.derek, .tina {
+    width: 10%;
+    padding: 0 4rem;
+    min-width: 7.75rem;
+    
+}
+
+.derek img, .tina img {
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(31, 30, 30,1);
+    padding: 1rem;
+}
+
+footer h4, footer h4 a {
+    font-family: 'PT Serif', serif;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer h4 {
+    opacity: .5;
+}
+
+.up-arrow {
+    width: 2%;
+    padding: .25rem;
+    background: rgba(220,220,220,.75);
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    min-width: 1.375rem;
+}
+
+.up-arrow img {
+    max-width: 100%;
+    opacity: .7
+}
+
+@media only screen and (max-width: 606px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+    nav {
+        margin: 0;
+    }
+    #logo {
+        position: relative;
+        top: 1.25rem;
+        right: .5rem;
+    }
+    .banner h1 {
+        left: 0;
+        bottom: 0;
+        
+    }
+    .banner {
+        justify-content: center;
+        height: 25rem;
+    }
+    .up-arrow {
+        bottom: 4rem;
+        right: .5rem;
+    }
+}
+
