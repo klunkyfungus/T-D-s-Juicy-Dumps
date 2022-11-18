@@ -152,7 +152,7 @@ main {
     width: 20rem;
     max-height: 20rem;
     overflow: hidden;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .image-container-slider {
@@ -187,7 +187,12 @@ main {
     justify-content: center;
     text-align: center;
     height: 21.5625rem; 
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+}
+
+.offering-container-slider h4 {
+    position: relative;
+    bottom: .4rem;
 }
 
 .offering-container img:hover, .offering-container-slider img:hover {
@@ -269,7 +274,7 @@ footer h4 {
     opacity: .7
 }
 
-@media only screen and (max-width: 606px) and (min-width: 480px) and (orientation: landscape) {
+@media only screen and (max-width: 606px) and (min-width: 480px) {
     header {
         flex-wrap: wrap;
         justify-content: center;
@@ -302,9 +307,6 @@ footer h4 {
 }
 
 @media only screen and (max-width: 480px) and (orientation: portrait) {
-    html, body {
-        overflow-x: hidden;    
-    }
     header {
         flex-flow: column;
         align-items: center;
