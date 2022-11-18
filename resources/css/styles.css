@@ -269,7 +269,7 @@ footer h4 {
     opacity: .7
 }
 
-@media only screen and (max-width: 606px) {
+@media only screen and (max-width: 606px) and (min-width: 480px) {
     header {
         flex-wrap: wrap;
         justify-content: center;
@@ -278,9 +278,12 @@ footer h4 {
     nav {
         margin: 0;
     }
+    nav ul {
+        margin-left: 4.75rem;
+    }
     #logo {
         position: relative;
-        top: 1.25rem;
+        top: 1.5rem;
         right: .5rem;
     }
     .banner h1 {
@@ -306,6 +309,9 @@ footer h4 {
     }
     nav {
         margin: 0;
+    }
+    nav ul {
+        margin-right: .5rem;
     }
     .banner h1 {
         left: 0;
