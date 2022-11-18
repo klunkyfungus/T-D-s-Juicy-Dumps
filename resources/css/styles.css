@@ -269,7 +269,7 @@ footer h4 {
     opacity: .7
 }
 
-@media only screen and (max-width: 606px) and (min-width: 480px) {
+@media only screen and (max-width: 606px) and (min-width: 480px) and (orientation: landscape) {
     header {
         flex-wrap: wrap;
         justify-content: center;
@@ -302,6 +302,9 @@ footer h4 {
 }
 
 @media only screen and (max-width: 480px) and (orientation: portrait) {
+    html, body {
+        overflow: hidden;
+    }
     header {
         flex-flow: column;
         align-items: center;
