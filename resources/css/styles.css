@@ -303,7 +303,7 @@ footer h4 {
 
 @media only screen and (max-width: 480px) and (orientation: portrait) {
     html, body {
-        overflow: hidden;
+        overflow-x: hidden;    
     }
     header {
         flex-flow: column;
