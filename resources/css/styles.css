@@ -318,5 +318,11 @@ footer h4 {
     .up-arrow {
         display: none;
     }
+    .derek, .tina {
+        padding: 0 2rem;       
+    }
+    .offerings h2 {
+        width: 95%;
+    }
 }
 
